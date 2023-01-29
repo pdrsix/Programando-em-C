@@ -12,30 +12,36 @@ int main()
     do{
     printf("Escolha entre: \n1 - soma \n2 - subtração \n3 - divisão \n4 - multiplicação\n");
     scanf("%d", &i);
-    }while(i>4 || i<1);
-    printf("Digite os dois numeros para o calculo:\n");
-    scanf("%f %f", &num1, &num2);
+        switch(i){
+            case 1:
+                printf("Digite os dois numeros para o calculo:\n");
+                scanf("%f %f", &num1, &num2);
+                soma = num1 + num2;
+                printf("O resultado da soma de %.2f + %.2f = %.2f", num1, num2, soma);
+                break;
+            case 2:
+                printf("Digite os dois numeros para o calculo:\n");
+                scanf("%f %f", &num1, &num2);
+                sub = num1 - num2;
+                printf("O resultado da subtração de %.2f - %.2f = %.2f", num1, num2, sub);
+                break;
+            case 3:
+                    printf("Digite os dois numeros para o calculo:\n");
+                    scanf("%f %f", &num1, &num2);
+                    div = num1 / num2;
+                    printf("O resultado da divisão de %.2f / %.2f = %.2f", num1, num2, div);
+                    break;
+            case 4:
+                    printf("Digite os dois numeros para o calculo:\n");
+                    scanf("%f %f", &num1, &num2);
+                    mult = num1 * num2;
+                    printf("O resultado da multiplicação de %.2f * %.2f = %.2f", num1, num2, mult);
+                    break;
+            default:
+                printf("Numero invalido\n");
+            }
 
-    switch(i){
-        case 1:
-            soma = num1 + num2;
-            printf("O resultado da soma de %.2f + %.2f = %.2f", num1, num2, soma);
-            break;
-        case 2:
-            sub = num1 - num2;
-            printf("O resultado da subtração de %.2f - %.2f = %.2f", num1, num2, sub);
-            break;
-        case 3:
-            div = num1 / num2;
-            printf("O resultado da divisão de %.2f / %.2f = %.2f", num1, num2, div);
-            break;
-        case 4:
-            mult = num1 * num2;
-            printf("O resultado da multiplicação de %.2f * %.2f = %.2f", num1, num2, mult);
-            break;
-        default:
-            printf("Numero invalido");
-        }
+    }while(i>4 || i<1);
 
 
     return 0;
