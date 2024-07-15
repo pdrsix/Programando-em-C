@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1675037363 source:c:\users\pepef\desktop\work's si\testando funções\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

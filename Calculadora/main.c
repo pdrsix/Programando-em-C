@@ -9,6 +9,7 @@ int main()
     float num1, num2, soma, sub, div, mult;
     printf("\t\tCalculadora Simples em C\t\t\n");
 
+
     do{
     printf("Escolha entre: \n1 - soma \n2 - subtração \n3 - divisão \n4 - multiplicação\n");
     scanf("%d", &i);
